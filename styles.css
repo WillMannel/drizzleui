@@ -1,0 +1,126 @@
+/* Reset some basic elements */
+body, h1, h2, p, button, input, select {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* A simple flexbox centering for all main content */
+  .app-header, .no-vibes-screen, .create-vibes-screen, .vibes-list-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .app-header {
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    width: 50px; /* Adjust as needed */
+  }
+  
+  .app-title {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  /* Styling for the "No Vibes" screen */
+  .no-vibes-screen {
+    height: calc(100vh - 100px); /* Adjust based on actual header height */
+  }
+  
+  .no-vibes-screen h2 {
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .no-vibes-screen p {
+    color: #666;
+    margin-bottom: 2em;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for the "Create a Vibes" screen */
+  .create-vibes-screen {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+  }
+  
+  .vibes-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .vibes-form label {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .vibes-form input[type="text"],
+  .vibes-form select,
+  .vibes-form input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  /* Styling for the "Vibes List" screen */
+  .vibes-list-screen {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+  }
+  
+  .vibe-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .vibe-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .vibe-name {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Responsive adjustments can be added here */
+  
+  /* Add any additional styles for transitions, hovers, or other interactive elements */
+  
